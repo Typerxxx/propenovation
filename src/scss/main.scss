@@ -1,0 +1,125 @@
+// базовые подключения
+
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+
+@import "./components/header";
+
+.container {
+  max-width: 1098px;
+}
+
+.bereken {
+  background-color: #69695a;
+  height: 800px;
+  overflow-y: hidden;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    max-width: 590px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  &__item {
+    &-option {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    &-desc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-title {
+      margin-left: 8%;
+      color: #c4c4c4;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 40px;
+      margin-bottom: 36px;
+    }
+  }
+  &__desc {
+    &-title {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-bottom: 14px;
+    }
+    &-subtitle {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+}
+
+.onze {
+  height: 800px;
+  &__title {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+  }
+  &__info {
+    &-name {
+      color: #69695a;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.05em;
+    }
+
+    &-value {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 36px;
+    }
+  }
+  &__galary {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    &-col:first-child {
+      max-width: 320px;
+    }
+    &-col:nth-child(2) {
+      max-width: 424px;
+    }
+
+    &-title {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 36px;
+      letter-spacing: 0.05em;
+      color: #69695a;
+    }
+
+    &-subtitle {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.05em;
+    }
+
+    &-col:last-child img {
+    }
+  }
+}
